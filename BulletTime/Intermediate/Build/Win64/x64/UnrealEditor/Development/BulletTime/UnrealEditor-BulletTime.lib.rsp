@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-BulletTime.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\Admin\Desktop\Personal - Irvin\Git\BulleTime\BulletTime\Intermediate\Build\Win64\x64\BulletTimeEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"C:\Users\Admin\Desktop\Personal - Irvin\Git\BulleTime\BulletTime\Intermediate\Build\Win64\x64\UnrealEditor\Development\BulletTime\BulletTime.init.gen.cpp.obj"
+"C:\Users\Admin\Desktop\Personal - Irvin\Git\BulleTime\BulletTime\Intermediate\Build\Win64\x64\UnrealEditor\Development\BulletTime\TowerControl.gen.cpp.obj"
+"C:\Users\Admin\Desktop\Personal - Irvin\Git\BulleTime\BulletTime\Intermediate\Build\Win64\x64\UnrealEditor\Development\BulletTime\BulletTime.cpp.obj"
+"C:\Users\Admin\Desktop\Personal - Irvin\Git\BulleTime\BulletTime\Intermediate\Build\Win64\x64\UnrealEditor\Development\BulletTime\TowerControl.cpp.obj"
+"C:\Users\Admin\Desktop\Personal - Irvin\Git\BulleTime\BulletTime\Intermediate\Build\Win64\x64\UnrealEditor\Development\BulletTime\PerModuleInline.gen.cpp.obj"
+"C:\Users\Admin\Desktop\Personal - Irvin\Git\BulleTime\BulletTime\Intermediate\Build\Win64\x64\UnrealEditor\Development\BulletTime\Default.rc2.res"
+/OUT:"C:\Users\Admin\Desktop\Personal - Irvin\Git\BulleTime\BulletTime\Intermediate\Build\Win64\x64\UnrealEditor\Development\BulletTime\UnrealEditor-BulletTime.lib"
