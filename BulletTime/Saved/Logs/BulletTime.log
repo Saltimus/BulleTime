@@ -1908,3 +1908,509 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2026.04.21-08.34.22:500][616]LogMeshUtilities: Finished distance field build in 1.2s - 126x126x126 sparse distance field, 1.8Mb total, 0.1Mb always loaded, 51% occupied, 522 triangles, StaticMesh_HLOD0_Instancing_3
 [2026.04.21-08.34.23:781][693]LogMeshUtilities: Finished distance field build in 1.3s - 126x126x126 sparse distance field, 2.0Mb total, 0.1Mb always loaded, 55% occupied, 522 triangles, StaticMesh_HLOD0_Instancing_3
 [2026.04.21-08.34.29:848][ 42]LogSlate: Took 0.005855 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: ================================================
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Total job queries 11,638, among them cache hits 3 (0.03%), DDC hits 0 (0.00%), Duplicates 2,683 (23.05%)
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Tracking 8,952 distinct input hashes that result in 8,462 distinct outputs (94.53%)
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: RAM used: 6.36 MiB of 1.60 GiB budget. Usage: 0.39%
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Shaders Compiled: 8,952
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Jobs assigned 8,952, completed 8,952 (100%)
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Average time worker was idle: 0.16 s
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Time job spent in pending queue: average 270.17 s, longest 564.23 s
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Job execution time: average 5.29 s, max 74.79 s
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Job life time (pending + execution): average 275.47 s, max 564.90
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Shader code size: average 14.315 KiB, min 1.16 KiB, max 330.166 KiB
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 624.62 s
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.22%
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Jobs were issued in 953 batches (only local compilation was used), average 9.39 jobs/batch
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Average processing rate: 14.33 jobs/sec
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Total thread time: 4,830.315 s
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Total thread preprocess time: 116.782 s
+[2026.04.21-08.36.33:715][458]LogShaderCompilers: Display: Percentage time preprocessing: 2.42%
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display: Effective parallelization: 7.73 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display:                                          FTSRRejectShadingCS (compiled   27 times, average 22.82 sec, max 74.30 sec, min 1.20 sec)
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display:                                               FPathTracingRG (compiled    1 times, average 16.23 sec, max 16.23 sec, min 16.23 sec)
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display:                                   FSSDTemporalAccumulationCS (compiled   10 times, average 7.91 sec, max 10.64 sec, min 4.89 sec)
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display:                         TBasePassCSFNoLightMapPolicySkylight (compiled    2 times, average 5.41 sec, max 8.50 sec, min 2.31 sec)
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display:                                        FCloudRenderViewPS110 (compiled    1 times, average 4.54 sec, max 4.54 sec, min 4.54 sec)
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display:                                          FTSRRejectShadingCS - 12.76% of total time (compiled   27 times, average 22.82 sec, max 74.30 sec, min 1.20 sec)
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display:                                             FDeferredLightPS - 12.06% of total time (compiled  454 times, average 1.28 sec, max 3.98 sec, min 0.98 sec)
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display:                                        FMicropolyRasterizeCS - 10.57% of total time (compiled  260 times, average 1.96 sec, max 4.92 sec, min 0.00 sec)
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS - 5.61% of total time (compiled   68 times, average 3.99 sec, max 9.63 sec, min 1.33 sec)
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display:                              FVolumetricFogLightScatteringCS - 5.27% of total time (compiled  480 times, average 0.53 sec, max 1.57 sec, min 0.21 sec)
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display: === Material stats ===
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display: Materials Cooked:        0
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display: Materials Translated:    129
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display: Material Total Translate Time: 0.10 s
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display: Material Translation Only: 0.05 s (47%)
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display: Material Cache Hits: 0 (0%)
+[2026.04.21-08.36.33:716][458]LogShaderCompilers: Display: ================================================
+[2026.04.21-08.39.15:354][959]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 366.021973
+[2026.04.21-08.39.16:354][962]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-08.39.16:354][962]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 366.689423, Update Interval: 313.255402
+[2026.04.21-08.44.32:034][909]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 682.701416
+[2026.04.21-08.44.33:035][912]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-08.44.33:035][912]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 683.367920, Update Interval: 334.849701
+[2026.04.21-08.46.22:220][990]LogStatusBar: Looking status bar with open content browser drawer...
+[2026.04.21-08.46.22:220][990]LogStatusBar: Using status bar: LevelEditor.StatusBar to dock content browser
+[2026.04.21-08.46.23:314][ 46]LogStatusBar: Looking status bar with open content browser drawer...
+[2026.04.21-08.46.23:314][ 46]LogStatusBar: Using status bar: LevelEditor.StatusBar to dock content browser
+[2026.04.21-08.47.26:580][751]LogStreaming: Display: FlushAsyncLoading(494): 1 QueuedPackages, 0 AsyncPackages
+[2026.04.21-08.47.32:195][751]LogSlate: Window 'New Level' being destroyed
+[2026.04.21-08.47.32:203][751]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=4
+[2026.04.21-08.47.32:231][751]LogWorld: UWorld::CleanupWorld for Untitled_1, bSessionEnded=true, bCleanupResources=true
+[2026.04.21-08.47.32:231][751]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.04.21-08.47.32:231][751]LogWorldPartition: UWorldPartition::Uninitialize : World = /Temp/Untitled_1.Untitled_1
+[2026.04.21-08.47.32:247][751]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.04.21-08.47.32:308][751]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2026.04.21-08.47.32:317][751]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled_2'.
+[2026.04.21-08.47.32:317][751]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled_2
+[2026.04.21-08.47.32:328][751]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2026.04.21-08.47.32:340][751]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2026.04.21-08.47.32:341][751]Cmd: MAP CHECKDEP NOCLEARLOG
+[2026.04.21-08.47.32:341][751]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.141ms to complete.
+[2026.04.21-08.47.36:202][962]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_1
+[2026.04.21-08.47.51:352][161]LogSlate: Window 'Save Level As' being destroyed
+[2026.04.21-08.47.51:479][161]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/GameLevel" FILE="../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/GameLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2026.04.21-08.47.51:502][161]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2026.04.21-08.47.51:513][161]LogSavePackage: Moving output files for package: /Game/GameLevel
+[2026.04.21-08.47.51:513][161]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Saved/GameLevel6226163746724BD529F636B799755079.tmp' to '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/GameLevel.umap'
+[2026.04.21-08.47.51:529][161]LogFileHelpers: Saving map 'GameLevel' took 0.142
+[2026.04.21-08.47.51:529][161]Cmd: MAP LOAD FILE="../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/GameLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2026.04.21-08.47.51:583][161]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2026.04.21-08.47.51:584][161]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.04.21-08.47.51:594][161]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.04.21-08.47.51:596][161]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2026.04.21-08.47.51:597][161]LogStreaming: Display: FlushAsyncLoading(497): 1 QueuedPackages, 0 AsyncPackages
+[2026.04.21-08.47.51:599][161]LogAudio: Display: Audio Device (ID: 1) registered with world 'GameLevel'.
+[2026.04.21-08.47.51:599][161]LogChaosDD: Creating Chaos Debug Draw Scene for world GameLevel
+[2026.04.21-08.47.51:611][161]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2026.04.21-08.47.51:623][161]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2026.04.21-08.47.51:628][161]Cmd: MAP CHECKDEP NOCLEARLOG
+[2026.04.21-08.47.51:628][161]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.063ms to complete.
+[2026.04.21-08.47.51:718][161]LogContentValidation: Display: Starting to validate 1 assets
+[2026.04.21-08.47.51:718][161]LogContentValidation: Enabled validators:
+[2026.04.21-08.47.51:718][161]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.04.21-08.47.51:718][161]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.04.21-08.47.51:718][161]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.04.21-08.47.51:718][161]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.04.21-08.47.51:718][161]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.04.21-08.47.51:719][161]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.04.21-08.47.51:719][161]AssetCheck: /Game/GameLevel Validating asset
+[2026.04.21-08.48.12:303][343]LogSlate: Window 'Plugins' being destroyed
+[2026.04.21-08.48.12:310][343]LogSlate: Window 'Plugins' being destroyed
+[2026.04.21-08.48.18:484][620]LogSlate: Window 'Editor Preferences' being destroyed
+[2026.04.21-08.48.18:489][620]LogSlate: Window 'Editor Preferences' being destroyed
+[2026.04.21-08.48.21:051][709]LogSlate: External Image Picker: DecompressImage failed
+[2026.04.21-08.48.23:333][824]LogSlate: Window 'Project Settings' being destroyed
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: ================================================
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Total job queries 11,666, among them cache hits 8 (0.07%), DDC hits 0 (0.00%), Duplicates 2,683 (23.00%)
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Tracking 8,975 distinct input hashes that result in 8,482 distinct outputs (94.51%)
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: RAM used: 6.36 MiB of 1.60 GiB budget. Usage: 0.39%
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Shaders Compiled: 8,975
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Jobs assigned 8,975, completed 8,975 (100%)
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Average time worker was idle: 7.16 s
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Time job spent in pending queue: average 269.48 s, longest 564.23 s
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Job execution time: average 5.28 s, max 74.79 s
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Job life time (pending + execution): average 274.76 s, max 564.90
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Shader code size: average 14.297 KiB, min 1.16 KiB, max 330.166 KiB
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 629.91 s
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.21%
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Jobs were issued in 976 batches (only local compilation was used), average 9.20 jobs/batch
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Average processing rate: 14.25 jobs/sec
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Total thread time: 4,846.312 s
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Total thread preprocess time: 117.118 s
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Percentage time preprocessing: 2.42%
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Effective parallelization: 7.69 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display:                                          FTSRRejectShadingCS (compiled   27 times, average 22.82 sec, max 74.30 sec, min 1.20 sec)
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display:                                               FPathTracingRG (compiled    1 times, average 16.23 sec, max 16.23 sec, min 16.23 sec)
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display:                                   FSSDTemporalAccumulationCS (compiled   10 times, average 7.91 sec, max 10.64 sec, min 4.89 sec)
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display:                         TBasePassCSFNoLightMapPolicySkylight (compiled    2 times, average 5.41 sec, max 8.50 sec, min 2.31 sec)
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display:                                        FCloudRenderViewPS110 (compiled    1 times, average 4.54 sec, max 4.54 sec, min 4.54 sec)
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display:                                          FTSRRejectShadingCS - 12.71% of total time (compiled   27 times, average 22.82 sec, max 74.30 sec, min 1.20 sec)
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display:                                             FDeferredLightPS - 12.02% of total time (compiled  454 times, average 1.28 sec, max 3.98 sec, min 0.98 sec)
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display:                                        FMicropolyRasterizeCS - 10.53% of total time (compiled  260 times, average 1.96 sec, max 4.92 sec, min 0.00 sec)
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS - 5.59% of total time (compiled   68 times, average 3.99 sec, max 9.63 sec, min 1.33 sec)
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display:                              FVolumetricFogLightScatteringCS - 5.25% of total time (compiled  480 times, average 0.53 sec, max 1.57 sec, min 0.21 sec)
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: === Material stats ===
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Materials Cooked:        0
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Materials Translated:    130
+[2026.04.21-08.48.34:048][454]LogShaderCompilers: Display: Material Total Translate Time: 0.10 s
+[2026.04.21-08.48.34:049][454]LogShaderCompilers: Display: Material Translation Only: 0.05 s (47%)
+[2026.04.21-08.48.34:049][454]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2026.04.21-08.48.34:049][454]LogShaderCompilers: Display: Material Cache Hits: 0 (0%)
+[2026.04.21-08.48.34:049][454]LogShaderCompilers: Display: ================================================
+[2026.04.21-08.50.13:685][ 96]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1024.351685
+[2026.04.21-08.50.15:351][101]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-08.50.15:351][101]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1025.684692, Update Interval: 350.265808
+[2026.04.21-08.50.32:902][470]LogSlate: Window 'Save Asset As' being destroyed
+[2026.04.21-08.50.40:323][909]LogAssetEditorSubsystem: Opening Asset editor for InputMappingContext /Game/TopDownInputMap.TopDownInputMap
+[2026.04.21-08.50.42:687][ 31]LogSlate: Window 'TopDownInputMap' being destroyed
+[2026.04.21-08.50.58:330][591]LogSlate: Window 'Save Asset As' being destroyed
+[2026.04.21-08.51.13:248][479]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.04.21-08.51.13:324][479]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/TopDownInputMap] ([1] browsable assets)...
+[2026.04.21-08.51.13:324][479]OBJ SavePackage: Finished generating thumbnails for package [/Game/TopDownInputMap]
+[2026.04.21-08.51.13:324][479]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownInputMap" FILE="../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/TopDownInputMap.uasset" SILENT=true
+[2026.04.21-08.51.13:325][479]LogSavePackage: Moving output files for package: /Game/TopDownInputMap
+[2026.04.21-08.51.13:325][479]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Saved/TopDownInputMap3226992D4C2A686AB011AA84BCB624A4.tmp' to '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/TopDownInputMap.uasset'
+[2026.04.21-08.51.13:333][479]LogFileHelpers: InternalPromptForCheckoutAndSave took 85.185 ms (total: 878.519 ms)
+[2026.04.21-08.51.13:435][479]LogContentValidation: Display: Starting to validate 1 assets
+[2026.04.21-08.51.13:435][479]LogContentValidation: Enabled validators:
+[2026.04.21-08.51.13:435][479]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.04.21-08.51.13:435][479]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.04.21-08.51.13:435][479]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.04.21-08.51.13:435][479]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.04.21-08.51.13:435][479]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.04.21-08.51.13:435][479]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.04.21-08.51.13:435][479]AssetCheck: /Game/TopDownInputMap Validating asset
+[2026.04.21-08.51.59:377][772]LogAssetEditorSubsystem: Opening Asset editor for InputAction /Game/KeyboardMouse.KeyboardMouse
+[2026.04.21-08.52.31:546][675]LogSlate: Window 'Pick Parent Class' being destroyed
+[2026.04.21-08.52.44:910][471]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.04.21-08.52.44:995][471]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/KeyboardMouse] ([1] browsable assets)...
+[2026.04.21-08.52.44:995][471]OBJ SavePackage: Finished generating thumbnails for package [/Game/KeyboardMouse]
+[2026.04.21-08.52.44:995][471]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/KeyboardMouse" FILE="../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/KeyboardMouse.uasset" SILENT=true
+[2026.04.21-08.52.44:996][471]LogSavePackage: Moving output files for package: /Game/KeyboardMouse
+[2026.04.21-08.52.44:996][471]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Saved/KeyboardMouse469D10A6440B6DC8D119599E2C6F6EE2.tmp' to '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/KeyboardMouse.uasset'
+[2026.04.21-08.52.45:004][471]LogFileHelpers: InternalPromptForCheckoutAndSave took 93.848 ms (total: 972.368 ms)
+[2026.04.21-08.52.45:113][471]LogContentValidation: Display: Starting to validate 1 assets
+[2026.04.21-08.52.45:113][471]LogContentValidation: Enabled validators:
+[2026.04.21-08.52.45:113][471]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.04.21-08.52.45:113][471]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.04.21-08.52.45:113][471]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.04.21-08.52.45:113][471]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.04.21-08.52.45:113][471]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.04.21-08.52.45:113][471]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.04.21-08.52.45:113][471]AssetCheck: /Game/KeyboardMouse Validating asset
+[2026.04.21-08.56.19:912][894]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1390.585693
+[2026.04.21-08.56.20:912][897]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-08.56.20:912][897]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1391.252319, Update Interval: 307.567993
+[2026.04.21-09.01.48:293][879]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1718.966064
+[2026.04.21-09.01.49:294][882]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-09.01.49:295][882]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1719.633667, Update Interval: 351.243622
+[2026.04.21-09.05.58:838][310]LogSlate: Took 0.006939 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2026.04.21-09.06.21:814][663]Running C:/Program Files/Epic Games/UE_5.5/Engine/Build/BatchFiles/Build.bat  -projectfiles -project="C:/Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/BulletTime.uproject" -game -rocket -progress
+[2026.04.21-09.06.21:936][663]Using bundled DotNet SDK version: 8.0.300
+[2026.04.21-09.06.21:936][663]Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -projectfiles -project="C:/Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/BulletTime.uproject" -game -rocket -progress
+[2026.04.21-09.06.22:438][663]Log file: C:\Users\Admin\AppData\Local\UnrealBuildTool\Log_GPF.txt
+[2026.04.21-09.06.22:640][663]
+[2026.04.21-09.06.22:640][663]Generating VisualStudio project files:
+[2026.04.21-09.06.22:640][663]Discovering modules, targets and source code for project...
+[2026.04.21-09.06.23:042][663]Available x64 toolchains (1):
+[2026.04.21-09.06.23:042][663] * C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207
+[2026.04.21-09.06.23:042][663]    (Family=14.44.35207, FamilyRank=1, Version=14.44.35225, Is64Bit=True, ReleaseChannel=Latest, Architecture=x64)
+[2026.04.21-09.06.23:042][663]Visual Studio 2022 compiler version 14.44.35225 is not a preferred version. Please use the latest preferred version 14.38.33130
+[2026.04.21-09.06.27:171][663]Binding IntelliSense data...
+[2026.04.21-09.06.48:341][663]Binding IntelliSense data... 50%
+[2026.04.21-09.06.48:342][663]Binding IntelliSense data... 100%
+[2026.04.21-09.06.48:342][663]Writing project files...
+[2026.04.21-09.06.50:370][663]Writing project files... 100%
+[2026.04.21-09.06.50:370][663]
+[2026.04.21-09.06.50:370][663]Generating QueryTargets data for editor...
+[2026.04.21-09.06.50:370][663]Total execution time: 28.25 seconds
+[2026.04.21-09.08.30:106][663]LogSlate: Window 'Message' being destroyed
+[2026.04.21-09.08.30:119][663]Message dialog closed, result: Ok, title: Message, text: Project now includes sources, please close the editor and build from your IDE.
+[2026.04.21-09.08.32:084][663]LogSlate: Window 'Message' being destroyed
+[2026.04.21-09.08.32:101][663]Message dialog closed, result: Yes, title: Message, text: Successfully added class 'TowerControl', however you must recompile the 'BulletTime' module before it will appear in the Content Browser.
+
+Would you like to edit the code now?
+[2026.04.21-09.08.32:453][663]LogSlate: Window 'Add C++ Class' being destroyed
+[2026.04.21-09.08.32:949][666]LogRHI: Error: GpuProfiler's scratch buffer is out of space for this frame (current size : 32 kB). Dropping this frame. The size can be increased dynamically with the console variable r.GpuProfilerMaxEventBufferSizeKB
+[2026.04.21-09.09.28:932][833]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2179.604980
+[2026.04.21-09.09.29:932][836]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-09.09.29:932][836]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2180.271729, Update Interval: 343.461426
+[2026.04.21-09.09.36:651][856]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2026.04.21-09.09.36:655][856]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2026.04.21-09.16.01:709][ 88]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2572.376465
+[2026.04.21-09.16.03:042][ 92]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-09.16.03:042][ 92]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2573.375977, Update Interval: 335.499756
+[2026.04.21-09.22.23:454][233]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2954.116211
+[2026.04.21-09.22.24:454][236]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-09.22.24:454][236]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2954.782227, Update Interval: 308.895538
+[2026.04.21-09.25.16:980][242]Running C:/Program Files/Epic Games/UE_5.5/Engine/Build/BatchFiles/Build.bat  -projectfiles -project="C:/Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/BulletTime.uproject" -game -rocket -progress
+[2026.04.21-09.25.17:102][242]Using bundled DotNet SDK version: 8.0.300
+[2026.04.21-09.25.17:102][242]Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -projectfiles -project="C:/Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/BulletTime.uproject" -game -rocket -progress
+[2026.04.21-09.25.17:505][242]Log file: C:\Users\Admin\AppData\Local\UnrealBuildTool\Log_GPF.txt
+[2026.04.21-09.25.17:605][242]
+[2026.04.21-09.25.17:605][242]Generating VisualStudio project files:
+[2026.04.21-09.25.17:605][242]Discovering modules, targets and source code for project...
+[2026.04.21-09.25.22:128][242]Binding IntelliSense data...
+[2026.04.21-09.25.35:895][242]LogDerivedDataCache: C:/Users/Admin/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.000 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 0 files in 1 folders with total size 0 MiB.
+[2026.04.21-09.25.37:424][242]Binding IntelliSense data... 50%
+[2026.04.21-09.25.37:425][242]Binding IntelliSense data... 100%
+[2026.04.21-09.25.37:425][242]Writing project files...
+[2026.04.21-09.25.39:237][242]Writing project files... 100%
+[2026.04.21-09.25.39:237][242]
+[2026.04.21-09.25.39:237][242]Generating QueryTargets data for editor...
+[2026.04.21-09.25.39:237][242]Total execution time: 22.04 seconds
+[2026.04.21-09.28.08:206][386]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 3298.864258
+[2026.04.21-09.28.09:540][390]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-09.28.09:540][390]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 3299.864258, Update Interval: 353.384186
+[2026.04.21-09.34.54:806][508]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 3705.446533
+[2026.04.21-09.34.55:189][531]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-09.34.55:189][531]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 3705.812500, Update Interval: 354.259460
+[2026.04.21-09.41.29:134][157]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 4099.770508
+[2026.04.21-09.41.29:485][178]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-09.41.29:485][178]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 4100.103516, Update Interval: 353.605774
+[2026.04.21-09.48.05:667][948]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 4496.305176
+[2026.04.21-09.48.06:050][971]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-09.48.06:050][971]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 4496.671875, Update Interval: 334.857025
+[2026.04.21-09.54.27:043][246]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 4877.578613
+[2026.04.21-09.54.28:377][250]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-09.54.28:377][250]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 4878.579102, Update Interval: 326.291077
+[2026.04.21-10.00.42:499][372]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 5253.037109
+[2026.04.21-10.00.43:499][375]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-10.00.43:499][375]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 5253.704102, Update Interval: 333.480042
+[2026.04.21-10.01.42:938][905]LogSlate: Window 'Pick Parent Class' being destroyed
+[2026.04.21-10.01.42:947][905]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2026.04.21-10.01.42:952][905]LogContentBrowser: Creating deferred item: NewBlueprint
+[2026.04.21-10.01.42:957][905]LogSlate: Vector cache flush requested. Reason: Large atlases out of space; 2/1 Textures; frames since last flush: 18414092516842187012
+[2026.04.21-10.01.42:958][905]LogSlate: Warning: Setting the threshold to trigger a flush to 2 non-atlased textures as there is a lot of font data being cached.
+[2026.04.21-10.01.42:960][905]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.04.21-10.01.42:970][906]LogContentBrowser: Renaming the item being created (Deferred Item: NewBlueprint).
+[2026.04.21-10.01.51:224][398]LogContentBrowser: Attempting asset rename: NewBlueprint -> PlayerTowerBP
+[2026.04.21-10.01.51:282][398]LogContentBrowser: End creating deferred item NewBlueprint
+[2026.04.21-10.01.51:626][415]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/PlayerTowerBP.PlayerTowerBP
+[2026.04.21-10.01.51:630][415]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_2
+[2026.04.21-10.01.51:675][415]LogStreaming: Display: FlushAsyncLoading(498): 1 QueuedPackages, 0 AsyncPackages
+[2026.04.21-10.01.53:810][415]LogStaticMesh: Display: Building static mesh PhAT_FloorBox (Required Memory Estimate: 0.024887 MB)...
+[2026.04.21-10.01.53:817][415]LogStaticMesh: Built static mesh [0.01s] /Engine/EditorMeshes/PhAT_FloorBox.PhAT_FloorBox
+[2026.04.21-10.02.15:565][847]LogUObjectHash: Compacting FUObjectHashTables data took   1.36ms
+[2026.04.21-10.02.15:566][847]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/GameLevel' took 0.126
+[2026.04.21-10.02.15:567][847]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/PlayerTowerBP] ([2] browsable assets)...
+[2026.04.21-10.02.15:567][847]OBJ SavePackage: Finished generating thumbnails for package [/Game/PlayerTowerBP]
+[2026.04.21-10.02.15:573][847]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/PlayerTowerBP_Auto1
+[2026.04.21-10.02.15:573][847]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Saved/PlayerTowerBP_Auto1BA7928C346D6CC9FADF3C3BD100E88FC.tmp' to '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Saved/Autosaves/Game/PlayerTowerBP_Auto1.uasset'
+[2026.04.21-10.02.15:574][847]LogFileHelpers: Auto-saving content packages took 0.007
+[2026.04.21-10.02.31:624][769]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_3
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: ================================================
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Total job queries 11,673, among them cache hits 10 (0.09%), DDC hits 0 (0.00%), Duplicates 2,683 (22.98%)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Tracking 8,980 distinct input hashes that result in 8,484 distinct outputs (94.48%)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: RAM used: 6.36 MiB of 1.60 GiB budget. Usage: 0.39%
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Shaders Compiled: 8,979
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Jobs assigned 8,980, completed 8,979 (99.99%)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Average time worker was idle: 29.97 s
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Time job spent in pending queue: average 269.33 s, longest 564.23 s
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Job execution time: average 5.28 s, max 74.79 s
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Job life time (pending + execution): average 274.64 s, max 564.90
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Shader code size: average 14.294 KiB, min 1.16 KiB, max 330.166 KiB
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 631.53 s
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.21%
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Jobs were issued in 981 batches (only local compilation was used), average 9.15 jobs/batch
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Average processing rate: 14.22 jobs/sec
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Total thread time: 4,847.847 s
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Total thread preprocess time: 117.2 s
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Percentage time preprocessing: 2.42%
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Effective parallelization: 7.68 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display:                                          FTSRRejectShadingCS (compiled   27 times, average 22.82 sec, max 74.30 sec, min 1.20 sec)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display:                                               FPathTracingRG (compiled    1 times, average 16.23 sec, max 16.23 sec, min 16.23 sec)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display:                                   FSSDTemporalAccumulationCS (compiled   10 times, average 7.91 sec, max 10.64 sec, min 4.89 sec)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display:                         TBasePassCSFNoLightMapPolicySkylight (compiled    2 times, average 5.41 sec, max 8.50 sec, min 2.31 sec)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display:                                        FCloudRenderViewPS110 (compiled    1 times, average 4.54 sec, max 4.54 sec, min 4.54 sec)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display:                                          FTSRRejectShadingCS - 12.71% of total time (compiled   27 times, average 22.82 sec, max 74.30 sec, min 1.20 sec)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display:                                             FDeferredLightPS - 12.01% of total time (compiled  454 times, average 1.28 sec, max 3.98 sec, min 0.98 sec)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display:                                        FMicropolyRasterizeCS - 10.53% of total time (compiled  260 times, average 1.96 sec, max 4.92 sec, min 0.00 sec)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS - 5.59% of total time (compiled   68 times, average 3.99 sec, max 9.63 sec, min 1.33 sec)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display:                              FVolumetricFogLightScatteringCS - 5.25% of total time (compiled  480 times, average 0.53 sec, max 1.57 sec, min 0.21 sec)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: === Material stats ===
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Materials Cooked:        0
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Materials Translated:    132
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Material Total Translate Time: 0.10 s
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Material Translation Only: 0.05 s (47%)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: Material Cache Hits: 0 (0%)
+[2026.04.21-10.02.33:500][866]LogShaderCompilers: Display: ================================================
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: ================================================
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Total job queries 11,673, among them cache hits 10 (0.09%), DDC hits 0 (0.00%), Duplicates 2,683 (22.98%)
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Tracking 8,980 distinct input hashes that result in 8,485 distinct outputs (94.49%)
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: RAM used: 6.36 MiB of 1.60 GiB budget. Usage: 0.39%
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Shaders Compiled: 8,980
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Jobs assigned 8,980, completed 8,980 (100%)
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Average time worker was idle: 29.97 s
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Time job spent in pending queue: average 269.33 s, longest 564.23 s
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Job execution time: average 5.28 s, max 74.79 s
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Job life time (pending + execution): average 274.61 s, max 564.90
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Shader code size: average 14.293 KiB, min 1.16 KiB, max 330.166 KiB
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 631.93 s
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.21%
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Jobs were issued in 981 batches (only local compilation was used), average 9.15 jobs/batch
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Average processing rate: 14.21 jobs/sec
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Total thread time: 4,848.775 s
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Total thread preprocess time: 117.216 s
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Percentage time preprocessing: 2.42%
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Effective parallelization: 7.67 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display:                                          FTSRRejectShadingCS (compiled   27 times, average 22.82 sec, max 74.30 sec, min 1.20 sec)
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display:                                               FPathTracingRG (compiled    1 times, average 16.23 sec, max 16.23 sec, min 16.23 sec)
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display:                                   FSSDTemporalAccumulationCS (compiled   10 times, average 7.91 sec, max 10.64 sec, min 4.89 sec)
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display:                         TBasePassCSFNoLightMapPolicySkylight (compiled    2 times, average 5.41 sec, max 8.50 sec, min 2.31 sec)
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display:                                        FCloudRenderViewPS110 (compiled    1 times, average 4.54 sec, max 4.54 sec, min 4.54 sec)
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display:                                          FTSRRejectShadingCS - 12.71% of total time (compiled   27 times, average 22.82 sec, max 74.30 sec, min 1.20 sec)
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display:                                             FDeferredLightPS - 12.01% of total time (compiled  454 times, average 1.28 sec, max 3.98 sec, min 0.98 sec)
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display:                                        FMicropolyRasterizeCS - 10.53% of total time (compiled  260 times, average 1.96 sec, max 4.92 sec, min 0.00 sec)
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS - 5.59% of total time (compiled   68 times, average 3.99 sec, max 9.63 sec, min 1.33 sec)
+[2026.04.21-10.05.33:592][191]LogShaderCompilers: Display:                              FVolumetricFogLightScatteringCS - 5.25% of total time (compiled  480 times, average 0.53 sec, max 1.57 sec, min 0.21 sec)
+[2026.04.21-10.05.33:594][191]LogShaderCompilers: Display: === Material stats ===
+[2026.04.21-10.05.33:594][191]LogShaderCompilers: Display: Materials Cooked:        0
+[2026.04.21-10.05.33:594][191]LogShaderCompilers: Display: Materials Translated:    132
+[2026.04.21-10.05.33:594][191]LogShaderCompilers: Display: Material Total Translate Time: 0.10 s
+[2026.04.21-10.05.33:594][191]LogShaderCompilers: Display: Material Translation Only: 0.05 s (47%)
+[2026.04.21-10.05.33:594][191]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2026.04.21-10.05.33:594][191]LogShaderCompilers: Display: Material Cache Hits: 0 (0%)
+[2026.04.21-10.05.33:594][191]LogShaderCompilers: Display: ================================================
+[2026.04.21-10.07.08:461][225]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 5638.977051
+[2026.04.21-10.07.08:844][248]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-10.07.08:844][248]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 5639.344238, Update Interval: 341.179840
+[2026.04.21-10.07.57:128][418]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2026.04.21-10.12.16:091][777]LogUObjectHash: Compacting FUObjectHashTables data took   1.59ms
+[2026.04.21-10.12.16:092][777]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/GameLevel' took 0.023
+[2026.04.21-10.12.16:093][777]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/PlayerTowerBP] ([2] browsable assets)...
+[2026.04.21-10.12.16:202][777]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/PlayerTowerBP.PlayerTowerBP]
+[2026.04.21-10.12.16:202][777]OBJ SavePackage: Finished generating thumbnails for package [/Game/PlayerTowerBP]
+[2026.04.21-10.12.16:209][777]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/PlayerTowerBP_Auto2
+[2026.04.21-10.12.16:209][777]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Saved/PlayerTowerBP_Auto2E6D59AC94CA1C0DDA9C4F0BAE3AFA779.tmp' to '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Saved/Autosaves/Game/PlayerTowerBP_Auto2.uasset'
+[2026.04.21-10.12.16:209][777]LogFileHelpers: Auto-saving content packages took 0.117
+[2026.04.21-10.13.22:597][993]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 6013.106445
+[2026.04.21-10.13.24:264][998]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-10.13.24:265][998]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 6014.440918, Update Interval: 359.045990
+[2026.04.21-10.19.54:013][775]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 6404.518066
+[2026.04.21-10.19.55:346][779]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-10.19.55:347][779]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 6405.518066, Update Interval: 310.278015
+[2026.04.21-10.22.16:467][202]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2026.04.21-10.22.16:469][202]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/GameLevel' took 0.025
+[2026.04.21-10.22.16:469][202]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/PlayerTowerBP] ([2] browsable assets)...
+[2026.04.21-10.22.16:469][202]OBJ SavePackage: Finished generating thumbnails for package [/Game/PlayerTowerBP]
+[2026.04.21-10.22.16:474][202]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/PlayerTowerBP_Auto3
+[2026.04.21-10.22.16:474][202]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Saved/PlayerTowerBP_Auto33A63C34E496203923AD704AE4660BF64.tmp' to '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Saved/Autosaves/Game/PlayerTowerBP_Auto3.uasset'
+[2026.04.21-10.22.16:475][202]LogFileHelpers: Auto-saving content packages took 0.006
+[2026.04.21-10.25.35:929][801]LogDerivedDataCache: C:/Users/Admin/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.000 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 0 files in 1 folders with total size 0 MiB.
+[2026.04.21-10.25.39:716][812]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 6750.223633
+[2026.04.21-10.25.41:049][816]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-10.25.41:050][816]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 6751.223633, Update Interval: 325.648376
+[2026.04.21-10.31.46:074][911]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 7116.577148
+[2026.04.21-10.31.47:075][914]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-10.31.47:075][914]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 7117.243652, Update Interval: 354.420593
+[2026.04.21-10.38.17:434][ 85]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 7507.932617
+[2026.04.21-10.38.18:435][ 88]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-10.38.18:435][ 88]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 7508.599609, Update Interval: 306.429016
+[2026.04.21-10.44.08:462][138]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 7858.967285
+[2026.04.21-10.44.09:796][142]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-10.44.09:796][142]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 7859.967285, Update Interval: 343.029266
+[2026.04.21-10.50.43:146][322]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 8253.642578
+[2026.04.21-10.50.44:146][325]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-10.50.44:146][325]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 8254.308594, Update Interval: 306.623138
+[2026.04.21-10.56.48:161][417]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 8618.612305
+[2026.04.21-10.56.49:162][420]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.04.21-10.56.49:162][420]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 8619.279297, Update Interval: 326.534637
+[2026.04.21-10.59.01:488][890]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.04.21-10.59.01:574][890]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/PlayerTowerBP] ([2] browsable assets)...
+[2026.04.21-10.59.01:574][890]OBJ SavePackage: Finished generating thumbnails for package [/Game/PlayerTowerBP]
+[2026.04.21-10.59.01:574][890]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/PlayerTowerBP" FILE="../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/PlayerTowerBP.uasset" SILENT=true
+[2026.04.21-10.59.01:579][890]LogSavePackage: Moving output files for package: /Game/PlayerTowerBP
+[2026.04.21-10.59.01:579][890]LogSavePackage: Moving '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Saved/PlayerTowerBPB97B79B149692633CB425A9793368611.tmp' to '../../../../../../Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/PlayerTowerBP.uasset'
+[2026.04.21-10.59.01:591][890]LogFileHelpers: InternalPromptForCheckoutAndSave took 103.699 ms (total: 1.07 sec)
+[2026.04.21-10.59.01:692][890]LogContentValidation: Display: Starting to validate 1 assets
+[2026.04.21-10.59.01:692][890]LogContentValidation: Enabled validators:
+[2026.04.21-10.59.01:692][890]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.04.21-10.59.01:692][890]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.04.21-10.59.01:692][890]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.04.21-10.59.01:692][890]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.04.21-10.59.01:692][890]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.04.21-10.59.01:692][890]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.04.21-10.59.01:692][890]AssetCheck: /Game/PlayerTowerBP Validating asset
+[2026.04.21-10.59.02:530][936]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2026.04.21-10.59.02:565][936]LogStall: Shutdown...
+[2026.04.21-10.59.02:565][936]LogStall: Shutdown complete.
+[2026.04.21-10.59.02:644][936]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2026.04.21-10.59.02:644][936]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.04.21-10.59.02:696][936]LogSlate: Window 'BulletTime - Unreal Editor' being destroyed
+[2026.04.21-10.59.03:042][936]LogUObjectHash: Compacting FUObjectHashTables data took   1.33ms
+[2026.04.21-10.59.03:051][936]Cmd: QUIT_EDITOR
+[2026.04.21-10.59.03:052][936]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2026.04.21-10.59.03:061][937]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2026.04.21-10.59.03:064][937]LogStaticMesh: Abandoning remaining async distance field tasks for shutdown
+[2026.04.21-10.59.03:064][937]LogStaticMesh: Abandoning remaining async card representation tasks for shutdown
+[2026.04.21-10.59.03:065][937]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2026.04.21-10.59.03:065][937]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.04.21-10.59.03:082][937]LogStylusInput: Shutting down StylusInput subsystem.
+[2026.04.21-10.59.03:089][937]LogLevelSequenceEditor: LevelSequenceEditor subsystem deinitialized.
+[2026.04.21-10.59.03:097][937]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2026.04.21-10.59.03:097][937]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.04.21-10.59.03:101][937]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2026.04.21-10.59.03:101][937]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.04.21-10.59.03:104][937]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2026.04.21-10.59.03:104][937]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.04.21-10.59.03:117][937]LogStudioTelemetry: Ended StudioTelemetry Session
+[2026.04.21-10.59.03:128][937]LogAnalytics: Display: [UEEditor.Rocket.Release] Destroying ET Analytics provider
+[2026.04.21-10.59.03:128][937]LogAnalytics: Display: [UEEditor.Rocket.Release] Ended ET Analytics provider session
+[2026.04.21-10.59.03:128][937]LogAnalytics: Display: [UEEditor.Rocket.Release] Destroyed ET Analytics provider
+[2026.04.21-10.59.03:135][937]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2026.04.21-10.59.03:135][937]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2026.04.21-10.59.03:135][937]LogAudio: Display: Audio Device unregistered from world 'GameLevel'.
+[2026.04.21-10.59.03:135][937]LogAudio: Display: Shutting down audio device while 1 references to it are still alive. For more information, compile with INSTRUMENT_AUDIODEVICE_HANDLES.
+[2026.04.21-10.59.03:139][937]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2026.04.21-10.59.03:143][937]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2026.04.21-10.59.03:154][937]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID -1
+[2026.04.21-10.59.03:156][937]LogAudio: Display: Audio Device Manager Shutdown
+[2026.04.21-10.59.03:156][937]LogWindowsTextInputMethodSystem: Activated input method: English (United States) - (Keyboard).
+[2026.04.21-10.59.03:161][937]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2026.04.21-10.59.03:162][937]LogExit: Preparing to exit.
+[2026.04.21-10.59.03:215][937]LogUObjectHash: Compacting FUObjectHashTables data took   1.19ms
+[2026.04.21-10.59.03:218][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_controls_for_selected_PY.add_controls_for_selected_options' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:218][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_controls_for_selected_PY.add_controls_for_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:219][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_null_above_selected_PY.add_null_above_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:220][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:220][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_all' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:220][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_x' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:220][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_y' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:220][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_z' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:220][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:220][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_scale' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:220][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.search_replace_name_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:220][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.search_replace_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:222][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_prefix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:222][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_prefix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:222][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_suffix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:222][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_suffix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:222][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.do_rename_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:222][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.do_rename_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:222][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/set_bone_reference_pose_PY.set_bone_reference_pose' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:222][937]LogPython: Display: Object '/ControlRig/Python/ControlRigWorkflows/workflow_fbik_import_ik_rig_PY.import_ik_rig_options' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.03:222][937]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_controls_for_selected_PY.ControlOutputFormat' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2026.04.21-10.59.04:425][937]LogEditorDataStorage: Deinitializing
+[2026.04.21-10.59.04:765][937]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2026.04.21-10.59.04:808][937]LogExit: Editor shut down
+[2026.04.21-10.59.04:811][937]LogExit: Transaction tracking system shut down
+[2026.04.21-10.59.05:172][937]LogExit: Object subsystem successfully closed.
+[2026.04.21-10.59.05:292][937]LogShaderCompilers: Display: Shaders left to compile 0
+[2026.04.21-10.59.06:110][937]LogMemoryProfiler: Shutdown
+[2026.04.21-10.59.06:110][937]LogNetworkingProfiler: Shutdown
+[2026.04.21-10.59.06:110][937]LoadingProfiler: Shutdown
+[2026.04.21-10.59.06:111][937]LogTimingProfiler: Shutdown
+[2026.04.21-10.59.06:622][937]LogChaosDD: Chaos Debug Draw Shutdown
+[2026.04.21-10.59.06:654][937]LogHttp: Warning: [FHttpManager::Shutdown] Unbinding delegates for 1 outstanding Http Requests:
+[2026.04.21-10.59.06:654][937]LogHttp: Warning: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B2513B555-49FC-CDCA-96C7-D8A0C316D851%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.5.4-40574608%2B%2B%2BUE5%2BRelease-5.5&UserID=e44480294eb1a590ea6910bf2b8d69ce%7Cf8a22ef94edc480e8e6eb3de3ebdb6fb%7C1b8faacc-7deb-471d-b82f-cafe6049a550&AppEnvironment=datacollector-binary&UploadType=eteventstream] refs=[2] status=Processing
+[2026.04.21-10.59.07:199][937]LogEOSSDK: FEOSSDKManager::Shutdown EOS_Shutdown Result=[EOS_Success]
+[2026.04.21-10.59.07:206][937]LogStudioTelemetry: Display: Shutdown StudioTelemetry Module
+[2026.04.21-10.59.07:206][937]LogNFORDenoise: NFORDenoise function shutting down
+[2026.04.21-10.59.07:207][937]RenderDocPlugin: plugin has been unloaded.
+[2026.04.21-10.59.07:219][937]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: None name: NetActorFactory id: 0
+[2026.04.21-10.59.07:219][937]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: None name: NetSubObjectFactory id: 1
+[2026.04.21-10.59.07:221][937]LogPakFile: Destroying PakPlatformFile
+[2026.04.21-10.59.07:516][937]LogD3D12RHI: ~FD3D12DynamicRHI
+[2026.04.21-10.59.07:581][937]LogExit: Exiting.
+[2026.04.21-10.59.07:618][937]Log file closed, 04/21/26 18:59:07

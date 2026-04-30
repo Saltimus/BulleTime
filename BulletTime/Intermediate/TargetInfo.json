@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "BulletTime",
+			"Path": "..\\Source\\BulletTime.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "BulletTimeEditor",
+			"Path": "..\\Source\\BulletTimeEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

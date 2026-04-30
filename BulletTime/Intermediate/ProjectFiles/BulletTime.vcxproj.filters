@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\BulletTime.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\BulletTime.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\BulletTimeEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\BulletTime">
+      <UniqueIdentifier>{F1FDF514-F28D-3881-AE84-5E8FC9C439B2}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\BulletTime\BulletTime.Build.cs">
+      <Filter>Source\BulletTime</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\BulletTime\BulletTime.cpp">
+      <Filter>Source\BulletTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BulletTime\BulletTime.h">
+      <Filter>Source\BulletTime</Filter>
+    </ClCompile>
+    <Filter Include="Source\BulletTime\Private">
+      <UniqueIdentifier>{66D2AD96-9AA6-34A2-96E2-FBB2DF9CDC26}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BulletTime\Private\TowerControl.cpp">
+      <Filter>Source\BulletTime\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\BulletTime\Public">
+      <UniqueIdentifier>{1D567C07-077A-3946-BF31-7EDCAAD5129B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BulletTime\Public\TowerControl.h">
+      <Filter>Source\BulletTime\Public</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

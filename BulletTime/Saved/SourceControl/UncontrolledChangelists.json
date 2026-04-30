@@ -5,7 +5,11 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+				"C:/Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"C:/Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/GameLevel.umap",
+				"C:/Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/TopDownInputMap.uasset",
+				"C:/Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/KeyboardMouse.uasset",
+				"C:/Users/Admin/Desktop/Personal - Irvin/Git/BulleTime/BulletTime/Content/PlayerTowerBP.uasset"
 			]
 		}
 	]
